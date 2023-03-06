@@ -1,0 +1,70 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  
+}
+
+#drum-machine {
+  max-width: 360px;
+  padding: 10px 15px 15px 15px;
+  border: 1px solid #646cff;
+  border-radius: 8px;
+}
+
+#display {
+  width: 100%;
+  margin: 5px auto 15px;
+  padding: 10px 0px;
+  border: 1px solid #646cff;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+#drum-pad-container {
+  min-height: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.drum-pad {
+  flex: 0 0 30%;
+  aspect-ratio: 1/ 1;
+  margin: 0px 0px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
