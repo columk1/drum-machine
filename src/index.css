@@ -57,14 +57,15 @@ button {
 }
 button:hover {
   border-color: #646cff;
+  box-shadow: 1px 1px #646cff;
 }
 
 button:active, .button-active {
-  background: radial-gradient(#646cff, #545cef);
+  background: radial-gradient(#646cff, #242cbf);
   background-color: #646cff;
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 1px auto #646cff;
   box-shadow: none;
-  transform: scale(0.97);
+  transform: scale(0.99);
 }
 
 button:focus-visible {
