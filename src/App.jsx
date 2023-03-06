@@ -87,7 +87,7 @@ function App() {
           ))}
         </div>
       </div>
-      <h1>Amen Break Kit</h1>
+      <h1>Amen Break Drum Kit</h1>
     </div>
   )
 }
