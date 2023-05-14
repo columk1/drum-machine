@@ -55,7 +55,9 @@ function App() {
 
   const playSound = (event) => {
     setDisplay(event.target.id);
-    event.target.querySelector('audio').play();
+    let audio = event.target.querySelector('audio');
+    audio.currentTime = 0;
+    audio.play();
   }
   
   document.addEventListener('keydown', (e) => {
